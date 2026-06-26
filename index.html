@@ -64,6 +64,20 @@
         gtag('config', 'G-EMCJPP09C1');
         gtag('config', 'AW-17953205126');
     </script>
+
+    <!-- Event snippet for Contact (1) conversion -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') { window.location = url; }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17953205126/ot22CIbfksAcEIbX4PBC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
 </head>
 
 <body>
@@ -94,7 +108,7 @@
                 <button class="dark-mode-toggle" id="dark-mode-toggle" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
-                <a id="nav-whatsapp-link" href="#" class="nav-cta" target="_blank" rel="noopener">
+                <a id="nav-whatsapp-link" href="#" class="nav-cta" target="_blank" rel="noopener" onclick="gtag_report_conversion();">
                     <i class="fab fa-whatsapp"></i><span>Chat</span>
                 </a>
                 <button class="mobile-menu" id="mobile-menu" aria-label="Menu">
@@ -129,7 +143,7 @@
                     <a href="/cars" onclick="navigate('vehicles', event)" class="btn-hero-primary">
                         <i class="fas fa-car"></i> Browse Fleet
                     </a>
-                    <a id="hero-whatsapp-btn" href="#" class="btn-hero-ghost" target="_blank" rel="noopener">
+                    <a id="hero-whatsapp-btn" href="#" class="btn-hero-ghost" target="_blank" rel="noopener" onclick="gtag_report_conversion();">
                         <i class="fab fa-whatsapp"></i> WhatsApp
                     </a>
                 </div>
@@ -212,12 +226,12 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Ignis','Manual','₹1,200')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Ignis','Manual','₹1,200')"
                                 aria-label="Book Maruti Ignis Manual">
                                 <i class="fab fa-whatsapp"></i> Manual
                             </button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Ignis','Automatic','₹1,500')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Ignis','Automatic','₹1,500')"
                                 aria-label="Book Maruti Ignis Automatic">
                                 <i class="fab fa-whatsapp"></i> Auto
                             </button>
@@ -249,10 +263,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Swift','Manual','₹1,200')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Swift','Manual','₹1,200')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Swift','Automatic','₹1,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Swift','Automatic','₹1,500')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -282,10 +296,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Swift Dzire','Manual','₹1,200')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Swift Dzire','Manual','₹1,200')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Swift Dzire','Automatic','₹1,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Swift Dzire','Automatic','₹1,500')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -315,10 +329,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Baleno','Manual','₹1,200')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Baleno','Manual','₹1,200')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Baleno','Automatic','₹1,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Baleno','Automatic','₹1,500')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -348,10 +362,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Hyundai i20','Manual','₹1,300')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Hyundai i20','Manual','₹1,300')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Hyundai i20','Automatic','₹1,600')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Hyundai i20','Automatic','₹1,600')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -381,10 +395,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Brezza','Manual','₹2,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Brezza','Manual','₹2,000')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Brezza','Automatic','₹2,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Brezza','Automatic','₹2,500')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -414,10 +428,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Hyundai Creta','Manual','₹2,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Hyundai Creta','Manual','₹2,500')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Hyundai Creta','Automatic','₹3,200')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Hyundai Creta','Automatic','₹3,200')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -447,10 +461,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Maruti Ertiga','Manual','₹2,200')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Ertiga','Manual','₹2,200')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Maruti Ertiga','Automatic','₹3,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Maruti Ertiga','Automatic','₹3,000')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -480,10 +494,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Kia Carens','Manual','₹2,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Kia Carens','Manual','₹2,500')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Kia Carens','Automatic','₹3,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Kia Carens','Automatic','₹3,000')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -513,10 +527,10 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Toyota Innova Crysta','Manual','₹3,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Toyota Innova Crysta','Manual','₹3,000')"><i
                                     class="fab fa-whatsapp"></i> Manual</button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Toyota Innova Crysta','Automatic','₹3,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Toyota Innova Crysta','Automatic','₹3,500')"><i
                                     class="fab fa-whatsapp"></i> Auto</button>
                         </div>
                     </div>
@@ -544,7 +558,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Toyota Innova Hycross','Automatic','₹3,500')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Toyota Innova Hycross','Automatic','₹3,500')"><i
                                     class="fab fa-whatsapp"></i> Book Hybrid</button>
                         </div>
                     </div>
@@ -572,7 +586,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Toyota Fortuner','Automatic','₹6,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Toyota Fortuner','Automatic','₹6,000')"><i
                                     class="fab fa-whatsapp"></i> Book Luxury</button>
                         </div>
                     </div>
@@ -607,12 +621,12 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Mahindra Thar Hardtop','Manual','₹3,000')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mahindra Thar Hardtop','Manual','₹3,000')"
                                 aria-label="Book Mahindra Thar Hardtop Manual">
                                 <i class="fab fa-whatsapp"></i> Manual
                             </button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Mahindra Thar Hardtop','Automatic','₹3,500')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mahindra Thar Hardtop','Automatic','₹3,500')"
                                 aria-label="Book Mahindra Thar Hardtop Automatic">
                                 <i class="fab fa-whatsapp"></i> Auto
                             </button>
@@ -649,12 +663,12 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--dark"
-                                onclick="bookViaWhatsApp('Mahindra Thar Soft Top','Manual','₹3,300')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mahindra Thar Soft Top','Manual','₹3,300')"
                                 aria-label="Book Mahindra Thar Soft Top Manual">
                                 <i class="fab fa-whatsapp"></i> Manual
                             </button>
                             <button class="btn-card btn-card--orange"
-                                onclick="bookViaWhatsApp('Mahindra Thar Soft Top','Automatic','₹4,000')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mahindra Thar Soft Top','Automatic','₹4,000')"
                                 aria-label="Book Mahindra Thar Soft Top Automatic">
                                 <i class="fab fa-whatsapp"></i> Auto
                             </button>
@@ -687,7 +701,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Mahindra Thar Roxx','Automatic','₹6,500')"
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mahindra Thar Roxx','Automatic','₹6,500')"
                                 aria-label="Book Mahindra Thar Roxx">
                                 <i class="fab fa-whatsapp"></i> Book Now
                             </button>
@@ -717,7 +731,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Mercedes-Benz C300','Automatic','₹18,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mercedes-Benz C300','Automatic','₹18,000')"><i
                                     class="fab fa-whatsapp"></i> Book Premium</button>
                         </div>
                     </div>
@@ -745,7 +759,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Audi A3','Automatic','₹20,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Audi A3','Automatic','₹20,000')"><i
                                     class="fab fa-whatsapp"></i> Book Luxury</button>
                         </div>
                     </div>
@@ -773,7 +787,7 @@
                         </div>
                         <div class="card-actions">
                             <button class="btn-card btn-card--orange card-full"
-                                onclick="bookViaWhatsApp('Mini Cooper','Automatic','₹16,000')"><i
+                                onclick="gtag_report_conversion(); bookViaWhatsApp('Mini Cooper','Automatic','₹16,000')"><i
                                     class="fab fa-whatsapp"></i> Book Luxury</button>
                         </div>
                     </div>
@@ -813,7 +827,7 @@
                             <span class="bike-price-val">₹600</span>
                             <span class="bike-price-unit">/day</span>
                         </div>
-                        <button class="btn-bike" onclick="bookViaWhatsApp('Yamaha Fascino 125','Bike','₹600')">
+                        <button class="btn-bike" onclick="gtag_report_conversion(); bookViaWhatsApp('Yamaha Fascino 125','Bike','₹600')">
                             <i class="fab fa-whatsapp"></i> Book Now
                         </button>
                     </div>
@@ -837,7 +851,7 @@
                             <span class="bike-price-val">₹2,000</span>
                             <span class="bike-price-unit">/day</span>
                         </div>
-                        <button class="btn-bike" onclick="bookViaWhatsApp('Royal Enfield Hunter 350','Bike','₹2000')">
+                        <button class="btn-bike" onclick="gtag_report_conversion(); bookViaWhatsApp('Royal Enfield Hunter 350','Bike','₹2000')">
                             <i class="fab fa-whatsapp"></i> Book Now
                         </button>
                     </div>
@@ -861,7 +875,7 @@
                             <span class="bike-price-val">₹2,000</span>
                             <span class="bike-price-unit">/day</span>
                         </div>
-                        <button class="btn-bike" onclick="bookViaWhatsApp('Royal Enfield Bullet 350','Bike','₹2000')">
+                        <button class="btn-bike" onclick="gtag_report_conversion(); bookViaWhatsApp('Royal Enfield Bullet 350','Bike','₹2000')">
                             <i class="fab fa-whatsapp"></i> Book Now
                         </button>
                     </div>

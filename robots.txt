@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /image/
 
 Sitemap: https://nszgoaride.com/sitemap.xml

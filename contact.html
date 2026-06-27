@@ -43,14 +43,16 @@
         gtag('config', 'AW-17953205126');
     </script>
 
-    <!-- Google Ads Contact Conversion -->
+    <!-- Event snippet for Contact (2) conversion page -->
     <script>
         function gtag_report_conversion(url) {
             var callback = function () {
-                if (typeof (url) != 'undefined') { window.location = url; }
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
             };
             gtag('event', 'conversion', {
-                'send_to': 'AW-17953205126/ot22CIbfksAcEIbX4PBC',
+                'send_to': 'AW-17953205126/q3u1CNXV3cYcEIbX4PBC',
                 'event_callback': callback
             });
             return false;
@@ -792,7 +794,7 @@
             msgDiv.innerHTML = '<div style="background:#f0fff4;color:#276749;padding:.85rem 1rem;border-radius:10px;border-left:4px solid #38a169;margin-bottom:.5rem;"><i class="fas fa-check-circle"></i> Opening WhatsApp…</div>';
 
             if (typeof gtag === 'function') {
-                gtag('event', 'conversion', { send_to: 'AW-17953205126/ot22CIbfksAcEIbX4PBC' });
+                gtag('event', 'conversion', { send_to: 'AW-17953205126/q3u1CNXV3cYcEIbX4PBC' });
             }
 
             setTimeout(() => {

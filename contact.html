@@ -59,6 +59,26 @@
         }
     </script>
 
+    <!-- Event snippet for Contact (3) conversion page -->
+    <script>
+        function gtag_report_conversion(url) {
+            var callback = function () {
+                if (typeof(url) != 'undefined') {
+                    window.location = url;
+                }
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17953205126/q3u1CNXV3cYcEIbX4PBC',
+                'event_callback': callback
+            });
+            gtag('event', 'conversion', {
+                'send_to': 'AW-17953205126/fM-_CJzzlsccEIbX4PBC',
+                'event_callback': callback
+            });
+            return false;
+        }
+    </script>
+
     <style>
         /* ── Contact Page Specific Styles ── */
 
@@ -795,6 +815,7 @@
 
             if (typeof gtag === 'function') {
                 gtag('event', 'conversion', { send_to: 'AW-17953205126/q3u1CNXV3cYcEIbX4PBC' });
+                gtag('event', 'conversion', { send_to: 'AW-17953205126/fM-_CJzzlsccEIbX4PBC' });
             }
 
             setTimeout(() => {
